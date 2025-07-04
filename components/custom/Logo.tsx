@@ -8,10 +8,10 @@ function Logo({
 
 
   return (
-    <Link className={cn( "flex font-cormorant-garamond text-3xl lg:text-4xl font-bold  items-center lg:items-end leading-6", className)} href="/">
-      Simone
+    <Link className={cn( "flex font-cormorant-garamond text-3xl lg:text-4xl font-bold items-center lg:items-end leading-6", className)} href="/">
+      Savorelle
     </Link>
   );
 }
-
+ 
 export default memo(Logo);
