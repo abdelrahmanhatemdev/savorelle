@@ -8,8 +8,8 @@ function Logo({
 
 
   return (
-    <Link className={cn( "flex font-cormorant-garamond text-3xl lg:text-4xl font-bold items-center lg:items-end leading-6", className)} href="/">
-      Savorelle
+    <Link className={cn( "flex text-3xl lg:text-5xl font-bold text-gradient-to-b from-red to-teal-400", className)} href="/">
+      S
     </Link>
   );
 }

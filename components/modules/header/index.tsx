@@ -1,8 +1,23 @@
-import { memo } from "react"
+import Logo from "@/components/custom/Logo";
+import { memo } from "react";
+import dynamic from "next/dynamic";
+import Container from "@/components/custom/Container";
+const MainMenu = dynamic(() => import("@/components/modules/header/MainMenu"));
+const SideMenus = dynamic(
+  () => import("@/components/modules/header/SideMenus")
+);
 
 function Header() {
   return (
-    <div>Header</div>
-  )
+    <nav className="py-5">
+      <Container>
+        <div className="flex items-center justify-between">
+          <Logo />
+          <MainMenu />
+          <SideMenus />
+        </div>
+      </Container>
+    </nav>
+  );
 }
-export default memo(Header)
+export default memo(Header);
