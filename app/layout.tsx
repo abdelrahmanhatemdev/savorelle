@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 const grandHotel = Grand_Hotel({
-  variable: "--font-poppins",
+  variable: "--font-grand-hotel",
   subsets: ["latin"],
   weight: ["400"]
 });
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${poppins.variable} ${grandHotel.variable} antialiased`}
       >
         {children}
       </body>

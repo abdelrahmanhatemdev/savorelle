@@ -8,7 +8,7 @@ function Logo({
 
 
   return (
-    <Link className={cn( "flex text-3xl lg:text-5xl font-bold text-gradient-to-b from-red to-teal-400", className)} href="/">
+    <Link className={cn( "flex text-3xl lg:text-5xl font-bold bg-gradient-to-r from-red to-orange font-poppins", className)} href="/">
       S
     </Link>
   );
