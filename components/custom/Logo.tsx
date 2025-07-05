@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { memo} from "react";
 
@@ -8,8 +9,13 @@ function Logo({
 
 
   return (
-    <Link className={cn( "flex text-3xl lg:text-5xl font-bold bg-gradient-to-r from-red to-orange font-poppins", className)} href="/">
-      S
+    <Link className={cn( "w-10 h-10 relative", className)} href="/">
+      <Image
+      src={"/logo.webp"}
+      alt="Logo"
+      fill
+      className="w-full h-full"
+      />
     </Link>
   );
 }

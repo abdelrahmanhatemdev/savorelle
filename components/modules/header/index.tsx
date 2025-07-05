@@ -9,7 +9,7 @@ const SideMenus = dynamic(
 
 function Header() {
   return (
-    <nav className="py-5">
+    <nav className="py-5 bg-neutral-900">
       <Container>
         <div className="flex items-center justify-between">
           <Logo />
