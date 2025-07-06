@@ -122,3 +122,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* - Scroll Bar */ 
+::-webkit-scrollbar {
+    inline-size: 5px; 
+}
+::-webkit-scrollbar-track{
+    @apply bg-neutral-300
+}
+::-webkit-scrollbar-thumb{
+    @apply bg-gradient-to-t from-red to-orange min-h-[25%]
+}

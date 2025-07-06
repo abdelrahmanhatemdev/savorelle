@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <Providers>
-      <html lang="en">
+      <html lang="en" className="scroll-smooth">
         <body
           className={`${roboto.variable} ${poppins.variable} ${grandHotel.variable} antialiased`}
         >
