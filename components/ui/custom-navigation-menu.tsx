@@ -1,7 +1,8 @@
-import * as React from "react";
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
+import * as React from "react"
+import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 
-import { cn } from "@/lib/utils";
+
+import { cn } from "@/lib/utils"
 
 function NavigationMenu({
   className,
@@ -9,7 +10,7 @@ function NavigationMenu({
   viewport = true,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Root> & {
-  viewport?: boolean;
+  viewport?: boolean
 }) {
   return (
     <NavigationMenuPrimitive.Root
@@ -24,7 +25,7 @@ function NavigationMenu({
       {children}
       {viewport && <NavigationMenuViewport />}
     </NavigationMenuPrimitive.Root>
-  );
+  )
 }
 
 function NavigationMenuList({
@@ -40,7 +41,7 @@ function NavigationMenuList({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function NavigationMenuItem({
@@ -53,7 +54,7 @@ function NavigationMenuItem({
       className={cn("relative", className)}
       {...props}
     />
-  );
+  )
 }
 
 function NavigationMenuTrigger({
@@ -64,12 +65,13 @@ function NavigationMenuTrigger({
   return (
     <NavigationMenuPrimitive.Trigger
       data-slot="navigation-menu-trigger"
-      className={cn("group", className)}
+      className={cn( "group", className)}
       {...props}
     >
       {children}{" "}
+
     </NavigationMenuPrimitive.Trigger>
-  );
+  )
 }
 
 function NavigationMenuContent({
@@ -86,7 +88,7 @@ function NavigationMenuContent({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function NavigationMenuViewport({
@@ -100,7 +102,6 @@ function NavigationMenuViewport({
       )}
     >
       <NavigationMenuPrimitive.Viewport
-        forceMount={true}
         data-slot="navigation-menu-viewport"
         className={cn(
           "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
@@ -109,7 +110,7 @@ function NavigationMenuViewport({
         {...props}
       />
     </div>
-  );
+  )
 }
 
 function NavigationMenuLink({
@@ -119,10 +120,12 @@ function NavigationMenuLink({
   return (
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
-      className={cn(className)}
+      className={cn(
+        className
+      )}
       {...props}
     />
-  );
+  )
 }
 
 function NavigationMenuIndicator({
@@ -140,7 +143,7 @@ function NavigationMenuIndicator({
     >
       <div className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md" />
     </NavigationMenuPrimitive.Indicator>
-  );
+  )
 }
 
 export {
@@ -152,4 +155,4 @@ export {
   NavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
-};
+}

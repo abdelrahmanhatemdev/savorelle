@@ -16,7 +16,7 @@ function CartMenu() {
       <NavigationMenuTrigger className="h-full flex items-center">
         <HiOutlineShoppingBag size={25} />
       </NavigationMenuTrigger>
-      <NavigationMenuContent className="p-5 pb-10">
+      <NavigationMenuContent className="p-5 pb-10 -left-64">
         <ul className="w-[150px] lg:w-[320px] flex flex-col gap-5 max-h-54 overflow-y-auto pe-3">
           {cartList.map((item) => (
             <CartItem item={item} key={item.photo} />
