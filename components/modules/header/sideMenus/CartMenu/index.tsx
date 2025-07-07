@@ -1,12 +1,10 @@
 import {
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/custom-navigation-menu";
-import Image from "next/image";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import CartItem from "./CartMenu/CartItem";
+import CartItem from "./CartMenuItem";
 import { Button } from "@/components/ui/button";
 import { cartList } from "@/data/cartList";
 

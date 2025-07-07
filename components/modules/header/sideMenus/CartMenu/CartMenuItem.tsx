@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ChangeEvent, memo, useState } from "react";
 import { ImBin } from "react-icons/im";
 
-function CartItem({ item }: { item: CartItem }) {
+function CartItem({ item }: { item: CartMenuItem }) {
   const [quantity, setQuantity] = useState(item.quantity);
   const onChange = (e: ChangeEvent<HTMLInputElement>) =>
     setQuantity(Number(e.target.value));
